@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "screenshot-test": "jest -c jest.screenshot.config.js"
+    "screenshot-test-local": "jest -c jest.screenshot.config.js",
+    "screenshot-test-percy": "SCREENSHOT_MODE=percy percy exec -- jest -c jest.screenshot.config.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,6 +31,7 @@
     ]
   },
   "devDependencies": {
-    "react-screenshot-test": "^1.0.0"
+    "@percy/puppeteer": "^1.0.8",
+    "react-screenshot-test": "^1.1.0"
   }
 }

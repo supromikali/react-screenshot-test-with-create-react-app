@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Docker Image
-      - run: docker pull fwouts/chrome-screenshot:1.1.0
+        run: docker pull fwouts/chrome-screenshot:1.1.0
 
       - name: Screenshot test
         run: npm run screenshot-test-local

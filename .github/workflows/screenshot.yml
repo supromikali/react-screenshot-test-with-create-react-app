@@ -21,8 +21,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Docker Image
+      - name: Download Docker Image
         run: docker pull fwouts/chrome-screenshot:1.1.0
+
+      - name: Run Docker Container
+        run: docker run fwouts/chrome-screenshot:1.1.0
 
       - name: Screenshot test
         run: npm run screenshot-test-local

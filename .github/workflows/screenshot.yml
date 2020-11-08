@@ -3,7 +3,7 @@ name: React Screenshot Test
 on:
   pull_request:
     branches:
-      - master
+      - fwouts:master
 
 jobs:
   screenshot:
